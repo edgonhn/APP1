@@ -63,7 +63,7 @@ var arc = d3.svg.arc()
     .innerRadius(function(d) { return Math.max(0, y(d.y)); })
     .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
 
-d3.json("https://www.dropbox.com/s/ezpc9kry31f8psn/flare4.json?raw=1", function(error, root) {
+d3.json("https://edgonhn.github.io/APP1/flare4.json", function(error, root) {
   var g = svg.selectAll("g")
       .data(partition.nodes(root))
     .enter().append("g");
